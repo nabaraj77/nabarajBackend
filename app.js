@@ -13,9 +13,8 @@ require("./initDB")();
 //CORS
 app.use(
   cors({
-    allowedHeaders: "*",
-    allowMethods: "*",
-    origin: "*",
+    credentials: true,
+    origin: "http://localhost:5173/",
   })
 );
 
