@@ -13,9 +13,9 @@ require("./initDB")();
 //CORS
 app.use(
   cors({
-    credentials: true,
+    allowedHeaders: "*",
+    allowMethods: "*",
     origin: "*",
-    optionSuccessStatus: 200,
   })
 );
 
